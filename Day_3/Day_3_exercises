@@ -1,0 +1,26 @@
+###DAY 3 EXERCISES COMMENTS###
+
+
+Part 1: Numpy exercises
+
+Done. Check jupyter notebook Nora_day3_exercises_1_2
+
+Part 2: Speed optimization using Numpy
+
+Done. Check jupyter notebook Nora_day3_exercises_1_2. This also ties in to day 2 exercises. I sort of combined them into something of a better optimization. Check the actual time optimization in the Day_2_exercises readme file.
+
+Part 3: Examples on classes and inheritance
+
+Check the classroom folder. To obtain the Teacher's name and course, do as follow:
+
+from classroom import Teacher
+me = Teacher('firstname', 'lastname', 'course')
+me.printNameCourse
+
+To obtain the student's name and subject
+
+from classroom import Student
+me = Student('firstname', 'lastname', 'subject')
+me.printNameSubject
+
+
