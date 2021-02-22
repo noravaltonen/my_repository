@@ -1,0 +1,40 @@
+##Day 2 exercises comment file###
+
+Part 1: Creating a Python package
+
+This part is found in the packages folder and the main script is nora_main
+
+
+Part 2: Debugging
+
+This part is found in the folder 'buggy_Nora'.
+I have found 5 errors which I fixed:
+
+1. It wasn't adding up the values correctly, so I fixed that.
+2. It wasn't understanding the prompt 'y'
+3. It wasn't counting the rounds
+4. It wasn't stopping the game after 6 rouns
+5. It raised an error when the Y/n prompt was entered.
+
+Part 3: Profiling
+
+a. I investigated the performance of matmult.py. On first go, I would say that I would begin by improving the last for loop. But after looking at it closely, I decided to re-write everything using numpy since it was just very time consuming. I attach the jupyter notebook named: Nora_day3_exercises_1_2 (in this day 2 and day 3 directory)
+
+b. For speed, I obtained: (Lines where the functions decorated begin)
+	Line 4:  0.007732 s
+	Line 21: 0.158769 s
+	Line 35: 0 s
+	Line 50: 0.345988 s
+Line 50 is where it is the most time-intensive, which makes sense since it is calling upon the other function (factorize) which is the second most time consuming. So probably I would start by optimizing the factorize function.
+
+For memory:
+
+I obtain a 367736.660 MiB increment for the factorize function which is being called by the fast_phi function. Once again, the problem seems to lie in the factorize function, so I would probably start re-writing that piece of code.
+
+c. Since I decided to re-write matmult.py(See python notebook named as Nora_day3_exercises_1_2), the improvement in performance are as follow:
+	For the creation of the NxN matrix: 58.1 ms vs 22.8 ns (peak memory: 58.96 MiB vs 59.44 MiB)
+	For the creation of the Nx matrix: 56.6 ms vs 28.8 ns
+	For the creation of the Nx(N+1): 213 microseconds vs 21.9 ns (peak memory: 59.55 MiB vs 56.62 MiB)
+	For the iteration through rows: 8.06 s vs 21.7 ns (68.07 MiB vs 68.32 MiB)
+
+Although the memory wasn't greatly improved, the time was. 
