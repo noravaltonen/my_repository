@@ -1,0 +1,7 @@
+
+Part 1: Scipy
+
+For the give matrix in the exercise page and the given vector, it is not possible to use neither linalg nor linalg.lstsq since the matrix has a determinant of zero.
+
+
+
