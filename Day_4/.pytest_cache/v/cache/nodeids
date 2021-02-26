@@ -1,0 +1,8 @@
+[
+  "test_simple_math.py::test_add",
+  "test_simple_math.py::test_sub",
+  "test_simple_math.py::test_mult",
+  "test_simple_math.py::test_div",
+  "test_simple_math.py::test_first",
+  "test_simple_math.py::test_second"
+]
